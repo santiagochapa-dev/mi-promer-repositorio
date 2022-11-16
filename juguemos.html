@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="juguemos.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <svg class="image">
+                <rect class="exterior" x="10px" y="10px" width=" 80px" height="50px" fill="rgb(63, 103, 151)" rx="5" ></rect>
+                <rect class="interior" x="15px" y="15px" width="70px" height="40px" fill="rgb(177, 213, 228)" rx="5"></rect>
+        
+        
+                <polygon class="exterior" id="rectanguloInf" points="10 65, 90 65, 100 105, 5 105" fill="rgb(63, 103, 151)"></polygon>
+                <polygon class="interior" points="13 70, 86 70, 93 100, 10 100" fill="rgb(177, 213, 228)"></polygon>
+            </svg>
+            <ul>
+                <li> <a  class="no" href="./historia.html">historia</a></li>
+                <li> <a class="no" href="./juguemos.html">juguemos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="tituloImagen">
+            <h1>juguemos un poco</h1>          
+        </section> 
+        
+        <h2 draggable="true">Armemos el rompecabezas y veamos que imagen es...</h2>
+
+        <section class="juego">
+            <section class="primeraParte">
+                
+               <div class="recuadroUno recuad" ondragover="prevenirAccion(event)" ondrop="soltarDato(event)">
+                   suelte aqui algo
+               </div>
+
+               <div class="recuadroDos recuad">
+               </div>
+
+               <div class="recuadroTres recuad">
+               </div>
+
+           </section>
+
+           <section class="segundaParte">
+               <div class="figuraUno figura">
+                   <img class="imgGame" ondragstart="guardarDato(event)" src="./imagenes/rompe2.png" alt="">
+               </div>
+
+               <div class="figuraDos figura">
+                   <img class="imgGame"  src="./imagenes/Rompe1.png" alt="">
+               </div>
+
+               <div class="figuraTres figura">
+                   <img class="imgGame" src="./imagenes/Rompe3.png" alt="">
+               </div>            
+           </section>
+        </section>
+
+
+    </main>
+    <footer>
+        <img  class="logoFinal" src="./imagenes/logo.svg" alt="">
+        <p class="prog">programacion <br>e <br/> historia</p>
+        <p class="sitio">sitio con fines educativos- Creado por M,victoria Lopez</p>      
+    </footer>
+
+    <script src="./juguemos.js"></script>
+</body>
+</html>
